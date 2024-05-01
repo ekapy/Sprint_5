@@ -31,6 +31,7 @@ class BurgersLocators:
     SAUCE = (By.XPATH, ".//span[text() = 'Соусы']/parent::div") #Таб Соусы
     SAUCE_CONTAINER = (By.XPATH, '//p[contains (text(),"Соус Spicy-X")]') #Элемент в Соусах
     FILLINGS = (By.XPATH, ".//span[text() = 'Начинки']/parent::div") #Таб Начинки
+    ACTIVE_STATE_BUTTON = 'tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect'
 
 
 

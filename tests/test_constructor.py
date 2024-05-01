@@ -30,10 +30,8 @@ class TestConstructor():
         driver.get(URL)
         active_button = get_active_state_button()
 
-        driver.implicitly_wait(1000)
-
         #WebDriverWait(driver,15).until(expected_conditions.element_to_be_clickable(BurgersLocators.FILLINGS))
         driver.find_element(*BurgersLocators.FILLINGS).click()
 
-        assert driver.find_element(*BurgersLocators.FILLINGS).get_attribute('class') == active_button, "Начинки не выбраны"
+        assert driver.find_element(*BurgersLocators.FILLINGS).get_attribute('class') == BurgersLocators.ACTIVE_STATE_BUTTON, "Начинки не выбраны"
 
