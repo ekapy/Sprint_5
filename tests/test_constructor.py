@@ -4,7 +4,6 @@ from config import URL
 from locators import BurgersLocators
 
 
-
 class TestConstructor():
     def test_active_buns(self, driver):
         driver.get(URL)

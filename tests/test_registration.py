@@ -2,7 +2,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from config import URL
 from locators import BurgersLocators
-from data import get_sign_up_data
+from helpers import get_sign_up_data
 
 
 class TestBurgersRegistration:
